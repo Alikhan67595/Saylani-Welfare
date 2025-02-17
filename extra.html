@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Basic Reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu Button Styling */
+#menuButton {
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 998; /* Menu button is behind sidebar */
+    display: none; /* Hide by default */
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar initially */
+    transition: left 0.3s ease;
+    z-index: 999; /* Sidebar is above the menu button */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin-top: 50px; /* Space for close button */
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Close Button Styling */
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main Content Styling */
+#mainContent {
+    padding: 20px;
+}
+
+/* When Sidebar is Open */
+#sidebar.open {
+    left: 0;
+}
+
+/* Media Query for Mobile and Tablet Devices */
+@media (max-width: 768px) {
+    #menuButton {
+        display: block; /* Show menu button on mobile/tablet */
+    }
+}
+</style>
+<body>
+    <!-- Menu Button -->
+    <button id="menuButton">☰ Menu</button>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <button id="closeButton">×</button> <!-- Close Button -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent">
+        <h1>Welcome to My Website</h1>
+        <p>Click the menu button to open the sidebar.</p>
+    </div>
+
+    <script>// Get elements
+        const menuButton = document.getElementById('menuButton');
+        const sidebar = document.getElementById('sidebar');
+        const closeButton = document.getElementById('closeButton');
+        
+        // Toggle sidebar on menu button click
+        menuButton.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+        
+        // Close sidebar on close button click
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+        });
+        
+        // Close sidebar when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
+                sidebar.classList.remove('open');
+            }
+        });</script>
+</body>
+</html>

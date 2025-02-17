@@ -1,0 +1,115 @@
+/* Basic Reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Button Styling */
+#menuButton {
+    cursor: pointer;
+    z-index: 998; /* Menu button is behind sidebar */
+    display: none; /* Hide by default */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar initially */
+    transition: left 0.3s ease;
+    z-index: 999; /* Sidebar is above the menu button */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.299);
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin-top: 50px; /* Space for close button */
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Close Button Styling */
+#closeButton {
+    position: absolute;
+    top: 37px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #666666;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Main Content Styling */
+#mainContent {
+    padding: 20px;
+}
+
+/* When Sidebar is Open */
+#sidebar.open {
+    left: 0;
+}
+
+.sidebar-logo{
+    width:150px;
+    position: absolute;
+    top: 35px;
+    left: 12px;
+    
+}
+
+.sidebar-but-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 90px;
+}
+
+.sidebar-but{
+    font-size: 14px;
+    background-color: #0d6db7;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 10px 60px;
+    border-radius: 5px;
+    border:1px solid #0d6db7 ;
+    cursor: pointer;
+}
+.sidebar-but:hover{
+    font-size: 13px;
+    padding: 10px 55px;
+    transition: all 0.1s ease-in-out;
+}
+
+.sidebar-but2{  
+box-sizing: border-box !important;
+background-color: #8dc63f !important;
+border:1px solid #0d6db7 !important;
+}
+
+
+/* Media Query for Mobile and Tablet Devices */
+@media (max-width: 768px) {
+    #menuButton {
+        display: block; /* Show menu button on mobile/tablet */
+    }
+}
