@@ -19,3 +19,5 @@ document.addEventListener('click', (event) => {
         sidebar.classList.remove('open');
     }
 });
+
+

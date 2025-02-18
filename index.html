@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style/sidebar.css">
+    <link rel="stylesheet" href="./style/main.css">
 </head>
 
 <body>
@@ -66,8 +67,30 @@
     </div>
     </nav>
 
+    <main>
+        <section class="section1">
+            <div class="section1-div1">
+                <span class="section1-div-span1"> Welfare to the <span style="color: #8dc63f;">Saylani</span> Welfare Non Governmental Organization in Pakistan</span>
+
+                <h4>The largest NGO offering free <span id="element"></span></h4>
+
+                <span class="section1-div-span2">Saylani Welfare is on the ground and already working with local communities to assess how best to support underprivileged families in more than 63 areas of day to day lives.</span>
+                <div class="section1-div-but">Explore More <img src="./assets/arrow.svg" alt=""></div>
+            </div>
+            <div class="section1-div2"><img src="./assets/slides.webp" alt=""></div>
+        </section>
+    </main>
+
 
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['daily Meals,', 'IT and vocational trainings,','The largest NGO offering free,','Monthly family support,','healthcare and lot more,','clean water,','education,','assistance to disaster affect,'],
+          typeSpeed: 60, loop:true,backSpeed: 40
+        });
+      </script>
 </body>
 
 </html>
+

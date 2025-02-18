@@ -108,8 +108,8 @@ border:1px solid #0d6db7 !important;
 
 
 /* Media Query for Mobile and Tablet Devices */
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
     #menuButton {
-        display: block; /* Show menu button on mobile/tablet */
+        display: block;
     }
 }
