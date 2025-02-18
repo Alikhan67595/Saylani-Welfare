@@ -159,7 +159,7 @@ nav .logo{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    width: 335px;
+    width: 325px;
 }
 .nav-but2{
     box-sizing: border-box !important;
@@ -174,15 +174,16 @@ nav .logo{
     justify-content: center;
     background-color: #0d6db7;
     color: #ffffff;
-    padding: 10px 24px;
+    padding: 9px 24px;
     border-radius: 5px;
     position: relative;
     
 }
 .nav-button:hover{
-    padding: 12px 29px;
-    font-size: 17px;
-    transition: all 0.1s ease-in-out;
+    /* padding: 12px 29px;
+    font-size: 17px; */
+    transform: scale(112%);
+    transition: all 0.2s ease-in-out;
 }
 
 

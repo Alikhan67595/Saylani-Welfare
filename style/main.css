@@ -13,10 +13,10 @@ main{
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 620px;
+    height: 570px;
     max-width: 1536px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .section1-div1{
@@ -24,7 +24,7 @@ main{
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    height: 620px;
+    height: auto;
     /* background-color: rgba(193, 193, 214, 0.176); */
 }
 
@@ -64,10 +64,18 @@ main{
     border: 1px solid #000000D9;
 }
 
+
+.section1-div2 img{
+    width: 20vw;
+}
+
 .section1-div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
-    height: 620px;
-    /* background-color: rgba(162, 204, 190, 0.147); */
+    height: auto;
+    background-color: rgba(162, 204, 190, 0.621);
     position: relative;
 }
 .section1-div2 img{
@@ -77,18 +85,302 @@ main{
 }
 
 
+.section2{
+    width: 90%;
+    max-width: 1536px;
+    display: flex;
+    position: relative;
+    margin: auto;
+
+}
+
+.section2 .section2-div-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    /* background-color: #80b1d6; */
+    background-color: #f0fcda;
+    
+} 
+
+.section2-div-main a{
+    text-decoration: none;
+    color: #424242;
+}
+
+.section2-div-main div{
+    background-color: rgb(250, 250, 250);
+    padding: 13px 17px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+.section2-div-main div:hover{
+    /* padding: 18px 24px; */
+    transform: scale(110%);
+    background-color: #424242;
+    color: white;
+    transition: all 0.2s ease-in-out ;
+    animation: changeColor-2 0.3s 1;
+
+}
+
+
+@keyframes changeColor-2 {
+    0% { background-color: #4242422c; }
+    50% { background-color: #42424280; }
+    100% { background-color: #424242; }
+    
+}
+
+
+.section2-div-main form{
+    background-color: #424242;
+    /* padding: 15px 20px; */
+    border-radius: 6px;
+    border: 1px solid #424242;
+    color: white;
+}
+
+.section2-div-main form input{
+    height: 50px;
+    width: 150px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.input-span{
+    font-weight: 600;
+    padding: 0px 8px;
+}
+
+form .span-ger{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.green-but{
+    background-color: #8dc63f !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+
+
+/* Section 3 CSS start */
+
+.section3{
+    width: 90%;
+    max-width: 1536px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.section img{
+    width: 100%;
+}
+
+.section3 .section3-button{
+    position: absolute;
+    z-index: 100;
+    bottom: 10px;
+    right: 5%;
+    color: white;
+    font-weight: 600;
+
+}
+
+
+
+
+/* Media Query Start */
+
+
+@media screen and (max-width:1200px){
+    .section1-div2 img{
+        width: 26rem;
+    }
+
+    .green-but{
+        background-color: #8dc63f !important;
+        color: white !important;
+        border-radius: 5px !important;
+    }
+}
+
+
+
+
+@media screen and (max-width:1000px){
+    .section1-div2 img{
+        width: 24rem;
+    }
+
+    .section1-div-span1{
+        line-height: normal;
+    }
+
+    .section1{
+        height: auto;
+    }
+}
+@media screen and (max-width:993px){
+    .section1-div2 img{
+        width: 90%;
+    }
+
+    .section1-div1{
+        justify-content: flex-start;
+    }
+
+    .section2-div-main form{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .section2-div-main form input{
+        width: 80%;
+    }
+    .section2-div-main form .input-span{
+        width: 10%;
+    }
+
+}
+
+
+
+@media screen and (max-width:768px){
+    .section1-div-span1{
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .section1-div1 h4{
+        font-size: 18px;
+    }
+
+    .section1-div-span2{
+        font-size: 10px;
+    }
+
+    .green-but{
+        background-color: #8dc63f !important;
+        color: white !important;
+        border-radius: 5px !important;
+    }
+
+    .section3 .section3-button{
+        position: absolute;
+        z-index: 100;
+        bottom: 10px;
+        right: 5%;
+        color: white;
+        font-size: 12px !important;
+        font-weight: 600;
+        background-color: #8dc63f;
+        padding: 9px 17px !important;
+        border-radius: 5px !important;
+    }
+        
+
+    
+
+}
+
+
+@media screen and (max-width:669px){
+
+    .section2-div-main form input{
+        width: 75%;
+    }
+    .section2-div-main form .input-span{
+        width: 10%;
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media screen and (max-width:580px){
+    .section1{
+        background-size: 100%;
+    }
+    .section1-div2{
+    display: none;
+    }
+    .section1-div1{
+    width: 100%;
+    }
+
+
+    .section2-div-main form input{
+        width: 60%;
+    }
+    .section2-div-main form .input-span{
+        width: 10%;
+        font-size: 12px;
+    }
+
+    .div-width{
+        width: 100%;
+    }
+
+    .section2-div-main div{
+        font-size: 13px;
+        gap:10px 0px;
+        padding: 10px 15px;
+    }
+
+    .section2-div-main div:hover{
+        animation: none;
+        transform: none;
+        padding: 10px 15px;
+    }
+
+    .green-but{
+        background-color: #8dc63f !important;
+        color: white !important;
+        border-radius: 5px !important;
+    }
+
+}
+
+
+
 
 
 @media screen and (max-width:576px){
-    .section1{
-        background-size: cover;
-    }
 
     .section1-div2{
         display: none;
     }
     .section1-div1{
         width: 100%;
+    }
+
+    .section1-div-span1{
+        font-size: 5vw;
+        line-height: normal;
+    }
+
+    .section1-div1 h4{
+        font-size: 3vw;
+        margin-top: 5px;
+    }
+
+    .section1-div-span2{
+        font-size: 2vw;
     }
 
 }
