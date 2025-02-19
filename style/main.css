@@ -119,6 +119,7 @@ main{
     border-radius: 10px;
     font-weight: 600;
     font-size: 14px;
+    transition: all 0.2s ease-in-out ;
 
 }
 .section2-div-main div:hover{
@@ -126,15 +127,14 @@ main{
     transform: scale(110%);
     background-color: #424242;
     color: white;
-    transition: all 0.2s ease-in-out ;
     animation: changeColor-2 0.3s 1;
 
 }
 
 
 @keyframes changeColor-2 {
-    0% { background-color: #4242422c; }
-    50% { background-color: #42424280; }
+    0% { background-color: #bcbcbc2c; }
+    50% { background-color: #96939380; }
     100% { background-color: #424242; }
     
 }

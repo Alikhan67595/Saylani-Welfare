@@ -177,13 +177,13 @@ nav .logo{
     padding: 9px 24px;
     border-radius: 5px;
     position: relative;
+    transition: transform 0.2s ease-in-out;
     
 }
 .nav-button:hover{
     /* padding: 12px 29px;
     font-size: 17px; */
     transform: scale(112%);
-    transition: all 0.2s ease-in-out;
 }
 
 
