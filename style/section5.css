@@ -51,6 +51,7 @@
 
 .section5-main-div:hover{
     transform: scale(108%);
+    
     .img-div-contain{
         background-color: rgba(0, 0, 0, 0.099);
     }
