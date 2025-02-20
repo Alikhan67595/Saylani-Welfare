@@ -59,6 +59,31 @@
 }
 
 
+
+/* div column wali class ki CSS */
+
+.column{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.column span{
+    font-size: 16px;
+    color: #8dc63f;
+}
+
+.column h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #424242;
+}
+
 @media screen and (max-width:1220px) {
 
     .div-size {

@@ -1,0 +1,83 @@
+.section8{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 50px 0px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.image-man{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(../assets/section8-img.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(255, 255, 50);
+}
+
+.section8 h4{
+    font-size: 20px;
+    color: #0d6db7;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.div-span{
+    color: #424242;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    margin:0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.section-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.section-button div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.section-button img{ 
+   width: 20px;
+}
+
+.white-color{
+    background-color: white;
+}
+
+.green-color{
+    background-color: #8dc63f;
+}
+
+
+.heading-sec{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px;
+    color: #424242;
+    font-weight: 500;
+    font-size: 30px;
+}
