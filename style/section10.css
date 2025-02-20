@@ -1,0 +1,121 @@
+.section10{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.section10-main-div{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+.section10-img-div{
+    height: 165px;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px ;
+}
+
+.section10-img1{
+    background-image: url(../assets/section10-img1.jpg);
+}
+.section10-img2{
+    background-image: url(../assets/section10-img2.jpg);
+}
+.section10-img3{
+    background-image: url(../assets/section10-img3.jpg);
+}
+.section10-img4{
+    background-image: url(../assets/section10-img4.jpg);
+}
+
+
+.section10-div-contain{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 15px;
+    /* background-color: rgba(229, 229, 179, 0.568); */
+}
+
+.section10-green-but{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(27, 27, 27);
+    padding: 5px 5px;
+    background-color: #8dc63f;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.section10-div-contain h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000D9;
+    margin: 10px 0px;
+}
+
+.right-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+}
+
+.right-arrow img{
+    width: 60px;
+}
+
+.right-arrow:hover{
+        left: 1px;
+
+}
+
+
+@media screen and (max-width:990px){
+    .section10{
+        gap: 20px 10px;
+        flex-wrap: wrap;
+    }
+
+    .section10-main-div{
+        width: 48%;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+
+
+}
+
+@media screen and (max-width:768px){
+    .section10-main-div{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .section10-img-div{
+        background-position: top;
+    }
+}
